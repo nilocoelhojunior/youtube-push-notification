@@ -1,7 +1,7 @@
 class YoutubeFeedController < ApplicationController
 
   def index
-    render json: {}
+    head :ok
   end
 
 end
