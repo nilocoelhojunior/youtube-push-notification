@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  root 'welcomes#index'
-  resources :youtube_feed
+  get 'subscribe', to: 'youtube_subscription#subscribe'
+  get 'update', to: 'youtube_subscription#confirm'
+  post 'update', to: 'youtube_feed#update'
 end
